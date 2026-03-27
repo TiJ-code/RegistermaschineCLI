@@ -1,7 +1,7 @@
 package dk.tij.registermaschine.console;
 
-import dk.tij.registermaschine.core.runtime.api.IExecutionContext;
-import dk.tij.registermaschine.core.runtime.api.IExecutionContextListener;
+import dk.tij.registermaschine.api.runtime.IExecutionContext;
+import dk.tij.registermaschine.api.runtime.IExecutionContextListener;
 
 import java.util.Scanner;
 

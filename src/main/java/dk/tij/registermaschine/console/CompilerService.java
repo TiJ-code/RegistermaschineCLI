@@ -1,8 +1,8 @@
 package dk.tij.registermaschine.console;
 
 import dk.tij.registermaschine.core.compilation.Pipeline;
-import dk.tij.registermaschine.core.compilation.api.compiling.ICompiledProgram;
-import dk.tij.registermaschine.core.instructions.api.IInstructionSet;
+import dk.tij.registermaschine.api.compilation.compiling.ICompiledProgram;
+import dk.tij.registermaschine.api.instructions.IInstructionSet;
 
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;

@@ -1,6 +1,7 @@
 package dk.tij.registermaschine.console;
 
-import dk.tij.registermaschine.core.compilation.api.compiling.*;
+import dk.tij.registermaschine.api.compilation.compiling.*;
+import dk.tij.registermaschine.api.compilation.compiling.ICompiledProgram;
 import dk.tij.registermaschine.core.compilation.internal.compiling.ConcreteCompiledInstruction;
 import dk.tij.registermaschine.core.compilation.internal.compiling.ConcreteCompiledOperand;
 import dk.tij.registermaschine.core.compilation.internal.compiling.ConcreteCompiledProgram;
