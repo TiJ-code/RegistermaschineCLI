@@ -2,13 +2,13 @@ package dk.tij.registermaschine.console;
 
 import dk.tij.registermaschine.api.compilation.compiling.ICompiledProgram;
 import dk.tij.registermaschine.api.error.SyntaxErrorException;
-import dk.tij.registermaschine.instructions.JumpInstruction;
 import dk.tij.registermaschine.api.instructions.IInstructionSet;
 import dk.tij.registermaschine.core.runtime.ConcreteExecutionContext;
 import dk.tij.registermaschine.core.runtime.Executor;
 import dk.tij.registermaschine.core.config.CoreConfigParser;
 import dk.tij.registermaschine.core.config.ConcreteInstructionSet;
 import dk.tij.registermaschine.core.compilation.Pipeline;
+import dk.tij.rm.instructions.JumpInstruction;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
