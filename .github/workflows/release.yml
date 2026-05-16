@@ -74,10 +74,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
           git commit -am "[ACTION] bump version to ${{ steps.versioning.outputs.NEW_VER }}"
-          git push origin main
-          
           git tag release-v${{ steps.versioning.outputs.NEW_VER }}
-          git push origin release-v${{ steps.versioning.outputs.NEW_VER }}
+          git push origin main --tags
 
   build:
     needs: version-bump
