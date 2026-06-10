@@ -74,7 +74,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
           git commit -am "[ACTION] bump version to ${{ steps.versioning.outputs.NEW_VER }}"
-          git tag release-v${{ steps.versioning.outputs.NEW_VER }}
+          git tag releases/v${{ steps.versioning.outputs.NEW_VER }}
           git push origin main --tags
 
   build:
@@ -210,7 +210,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           name: CLI v${{ needs.version-bump.outputs.new_version}}
-          tag_name: release-v${{ needs.version-bump.outputs.new_version }}
+          tag_name: releases/v${{ needs.version-bump.outputs.new_version }}
           files: dist/*
           append_body: true
           generate_release_notes: ${{ matrix.os == 'ubuntu-latest' }}
